@@ -1,0 +1,21 @@
+.ant-slider-dot {
+  display: none;
+}
+/* .ant-slider .ant-slider-track {
+  background-color: #52c41a !important; 
+}
+
+ .ant-slider:hover .ant-slider-track {
+  background-color: #52c41a !important; 
+}
+.ant-slider .ant-slider-handle{
+  background-color: #52c41a !important; 
+}
+.ant-slider:hover .ant-slider-handle{
+  background-color: #52c41a !important; 
+  border: none;
+} */
+
+.ant-slider-handle:hover {
+  border-color: #45a049 !important;
+}
