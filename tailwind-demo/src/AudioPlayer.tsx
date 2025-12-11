@@ -27,7 +27,6 @@ export default function AudioPlayer(props: any) {
 
     audio.addEventListener("loadedmetadata", setAudioData);
     audio.addEventListener("timeupdate", updateTime);
-    
   }, []);
 
   const handleClick = () => {
@@ -45,7 +44,6 @@ export default function AudioPlayer(props: any) {
     const audio = audioRef.current;
     if (audio) {
       audio.currentTime += 10;
-      audio.play()  ;
     }
   };
 
@@ -53,7 +51,6 @@ export default function AudioPlayer(props: any) {
     const audio = audioRef.current;
     if (audio) {
       audio.currentTime -= 10;
-      audio.play();
     }
   };
 
@@ -112,7 +109,7 @@ export default function AudioPlayer(props: any) {
             value={currentTime}
             tooltip={{ open: false }}
             onChange={sliderChange}
-            /* onChangeComplete={sliderAfterChange} */
+            onChangeComplete={sliderAfterChange}
             
           />
 

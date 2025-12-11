@@ -16,6 +16,21 @@
   border: none;
 } */
 
-.ant-slider-handle:hover {
-  border-color: #45a049 !important;
+media-play-button, media-time-display,media-seek-forward-button,media-seek-backward-button,media-mute-button,media-volume-range,media-fullscreen-button {
+  background: none !important;
 }
+
+.controls{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  
+}
+
+media-controller{
+  --media-icon-size: 60px;
+  --media-icon-size: 60px;
+
+}
+

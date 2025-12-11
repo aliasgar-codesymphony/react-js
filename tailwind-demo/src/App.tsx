@@ -13,11 +13,26 @@ import BoxShadow from "./BoxShadow";
 import PdfReader from "./PdfReader";
 import AudioPlayer from "./AudioPlayer";
 import { ConfigProvider } from "antd";
+import VideoPlayer from "./VideoPlayer";
+import ModalPrac from "./ModalPrac";
+import { StyleProvider } from '@ant-design/cssinjs';
+import Demo from "./Demo";
 
 function App() {
   return (
     <>
-      <ConfigProvider
+      
+      {/* <Font/> */}
+      {/* <Flex/> */}
+      {/* <Grid /> */}
+      {/* <Sizing/> */}
+      {/* <Spacing/> */}
+      {/* <Layout/> */}
+      {/* <Position/> */}
+      {/* <Site /> */}
+      {/* <BoxShadow /> */}
+      {/* <PdfReader  pdfUrl="https://www.aeee.in/wp-content/uploads/2020/08/Sample-pdf.pdf"/> */}
+      {/* <ConfigProvider
         theme={{
           components: {
             Slider: {
@@ -36,17 +51,16 @@ function App() {
           audioUrl="https://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3"
           imageUrl="https://images.pexels.com/photos/30888569/pexels-photo-30888569.jpeg"
         />
-      </ConfigProvider>
-      {/* <Font/> */}
-      {/* <Flex/> */}
-      {/* <Grid /> */}
-      {/* <Sizing/> */}
-      {/* <Spacing/> */}
-      {/* <Layout/> */}
-      {/* <Position/> */}
-      {/* <Site /> */}
-      {/* <BoxShadow /> */}
-      {/* <PdfReader  pdfUrl="https://www.aeee.in/wp-content/uploads/2020/08/Sample-pdf.pdf"/> */}
+      </ConfigProvider> */}
+
+      {/* <VideoPlayer videoUrl="https://youtu.be/jiwSvZ8Nvlo?si=VBxej8LKvmF5EhHu"/> */}
+
+
+      {/* <StyleProvider layer hashPriority="high">
+        <ModalPrac/>  
+      </StyleProvider> */}
+        
+      <Demo/>
     </>
   );
 }
