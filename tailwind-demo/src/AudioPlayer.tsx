@@ -4,6 +4,7 @@ import play2 from "./assets/play2.png";
 import left from "./assets/left-arrow.png";
 import right from "./assets/right-arrow.png";
 import pause from "./assets/pause.png";
+import { formatTime } from "media-chrome/dist/utils/time.js";
 
 export default function AudioPlayer(props: any) {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -106,11 +107,10 @@ export default function AudioPlayer(props: any) {
             min={0}
             max={duration}
             marks={marks}
-            value={currentTime}
             tooltip={{ open: false }}
             onChange={sliderChange}
-            onChangeComplete={sliderAfterChange}
-            
+            onAfterChange={sliderAfterChange}
+            value={currentTime}
           />
 
           <div className="flex justify-center gap-4">

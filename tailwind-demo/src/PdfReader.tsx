@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { Document, Page, pdfjs } from "react-pdf";
 
@@ -10,6 +10,8 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 export default function PdfReader(props: any) {
   const [numPages, setNumPages] = useState(0);
   const [pageNumber, setPageNumber] = useState(1);
+
+  useEffect(() => {}, [pageNumber, props.pdfUrl]);
 
   const onDocumentLoadSuccess = ({ numPages }: any) => {
     setNumPages(numPages);
@@ -34,7 +36,7 @@ export default function PdfReader(props: any) {
       >
         Prev
       </button>
-      <div className="h-190 w-170 border-2 border-gray-200  overflow-auto">
+      <div className="h-190 w-155 border-2 border-gray-200 overflow-hidden">
         <Document file={props.pdfUrl} onLoadSuccess={onDocumentLoadSuccess}>
           <Page pageNumber={pageNumber} />
         </Document>
@@ -46,7 +48,9 @@ export default function PdfReader(props: any) {
         Next
       </button>
 
-      <p>{pageNumber}/{numPages}</p>
+      <p>
+        {pageNumber}/{numPages}
+      </p>
     </div>
 
     /* 
