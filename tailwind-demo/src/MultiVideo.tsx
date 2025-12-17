@@ -63,69 +63,7 @@ export default function MultiVideo() {
     <>
       <AwesomeSlider bullets={false} className="bg-yellow-500">
         <div>
-          <div className="mt-5 h-full w-full flex flex-row items-center gap-4">
-            {videos.map((video: any) => (
-              <img
-                src={video.imageUrl}
-                className="w-90 h-50 cursor-pointer rounded-md"
-                onClick={() => {
-                  openModal(video.id);
-                }}
-              />
-            ))}
-          </div>
-
-          {videos.map((video: any) => (
-            <Modal
-              isOpen={id === video.id}
-              onRequestClose={closeModal}
-              className=" absolute top-[20px] left-[120px] right-[120px] bottom-[20px] outline-none "
-              overlayClassName="z-5000 fixed top-0 bottom-0 left-0 right-0 bg-[rgba(0,0,0,0.5)]"
-            >
-              <MediaController className="h-full w-full rounded-md ">
-                <button
-                  onClick={closeModal}
-                  className="absolute md:top-5 md:left-325"
-                >
-                  <img src={close2} className="w-10 h-10 cursor-pointer" />
-                </button>
-                <ReactPlayer
-                  src={video.videoUrl}
-                  //src="https://www.pexels.com/download/video/34963042/"
-                  controls={false}
-                  width="100%"
-                  height="100%"
-                  slot="media"
-                />
-
-                <MediaControlBar>
-                  <MediaTimeRange className="bg-transparent"></MediaTimeRange>
-                </MediaControlBar>
-                <MediaControlBar>
-                  <div className="flex justify-between items-center w-full ml-1 mr-1">
-                    <div>
-                      <MediaPlayButton></MediaPlayButton>
-                      <MediaSeekBackwardButton
-                        seekOffset={15}
-                      ></MediaSeekBackwardButton>
-                      <MediaSeekForwardButton
-                        seekOffset={15}
-                      ></MediaSeekForwardButton>
-                    </div>
-                    <div>
-                      <MediaTimeDisplay
-                        showDuration
-                        className="text-[24px]"
-                      ></MediaTimeDisplay>
-                      <MediaMuteButton></MediaMuteButton>
-                      <MediaVolumeRange></MediaVolumeRange>
-                      <MediaFullscreenButton></MediaFullscreenButton>
-                    </div>
-                  </div>
-                </MediaControlBar>
-              </MediaController>
-            </Modal>
-          ))}
+          
         </div>
       </AwesomeSlider>
     </>

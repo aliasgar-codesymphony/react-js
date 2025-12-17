@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Meghuchi",
+    "audioUrl": "https://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3",
+    "imageUrl": "https://images.pexels.com/photos/30888569/pexels-photo-30888569.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "Trick or Treat",
+    "audioUrl": "https://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3",
+    "imageUrl": "https://images.pexels.com/photos/34520469/pexels-photo-34520469.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "Trick or Treat",
+    "audioUrl": "https://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3",
+    "imageUrl": "https://images.pexels.com/photos/34520469/pexels-photo-34520469.jpeg"
+  },
+  {
+    "id": 1,
+    "name": "Meghuchi",
+    "audioUrl": "https://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3",
+    "imageUrl": "https://images.pexels.com/photos/30888569/pexels-photo-30888569.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "Trick or Treat",
+    "audioUrl": "https://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3",
+    "imageUrl": "https://images.pexels.com/photos/34520469/pexels-photo-34520469.jpeg"
+  },
+  {
+    "id": 1,
+    "name": "Meghuchi",
+    "audioUrl": "https://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3",
+    "imageUrl": "https://images.pexels.com/photos/30888569/pexels-photo-30888569.jpeg"
+  }
+]

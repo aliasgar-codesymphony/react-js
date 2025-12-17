@@ -5,22 +5,24 @@ import left from "./assets/left-arrow.png";
 import right from "./assets/right-arrow.png";
 import pause from "./assets/pause.png";
 import { formatTime } from "media-chrome/dist/utils/time.js";
-import { useParams } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
+import audios from "./audios.json";
 
-export default function AudioPlayer(props: any) {
+export default function AudioDemo() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const audioRef = useRef<HTMLAudioElement>(null);
-
-  
+  const [audioInfo, setAudioInfo] = useState(Object);
+  const location = useLocation();
+  const { audioData } = location.state;
 
   useEffect(() => {
     const audio = audioRef.current;
     if (!audio) {
       return;
     }
-
+    setAudioInfo(audioData);
     const setAudioData = () => {
       setDuration(audio.duration);
     };
@@ -94,14 +96,14 @@ export default function AudioPlayer(props: any) {
   return (
     <>
       <audio ref={audioRef}>
-        <source src={props.audioUrl} />
+        <source src={audioInfo.audioUrl} />
       </audio>
       <body className="bg-yellow-500">
         <div className="mt-12 flex flex-col  items-center justify-center gap-3 ">
-          <p className=" text-3xl">{props.name}</p>
+          <p className=" text-3xl">{audioInfo.name}</p>
 
           <img
-            src={props.imageUrl}
+            src={audioInfo.imageUrl}
             className="w-90 h-110 rounded-3xl border-2 p-2 border-dashed border-red-500"
           />
 

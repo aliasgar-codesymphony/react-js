@@ -21,6 +21,9 @@ import ModalPrac2 from "./ModalPrac2";
 import Website from "./Website";
 import MultiVideo from "./MultiVideo";
 import { Route, Routes } from "react-router-dom";
+import SwiperDemo from "./SwiperDemo";
+import AudioCard from "./AudioCard";
+import AudioDemo from "./AudioDemo";
 
 function App() {
   return (
@@ -72,8 +75,9 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Website />} />
-        <Route path="/watch" element={<MultiVideo />} />
-        <Route
+        <Route path="/watch" element={<SwiperDemo />} />
+
+        {/* <Route
           path="/listen"
           element={
             <AudioPlayer
@@ -82,13 +86,16 @@ function App() {
               imageUrl="https://images.pexels.com/photos/30888569/pexels-photo-30888569.jpeg"
             />
           }
-        />
+        /> */}
+        <Route path="/listen" element={<AudioCard />} />
         <Route
           path="/read"
           element={
             <PdfReader pdfUrl="https://www.aeee.in/wp-content/uploads/2020/08/Sample-pdf.pdf" />
           }
         />
+        <Route path="/audio" element={<AudioCard />} />
+        <Route path="/audio-demo" element={<AudioDemo />} />
       </Routes>
     </>
   );
