@@ -1,0 +1,40 @@
+
+[
+  {
+    "id": 1,
+    "name": "Newsletter",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDYksMHSjwgw7I0zpK9DTTaZHEnDq-_apfDA&s",
+    "pdfUrl": "https://www.sjsu.edu/writingcenter/docs/handouts/Research%20Papers%20in%20the%20Sciences.pdf"
+  },
+  {
+    "id": 2,
+    "name": "Catalogue",
+    "imageUrl": "https://img.freepik.com/free-vector/hand-drawn-product-catalog-template_23-2149853541.jpg?semt=ais_hybrid&w=740&q=80",
+    "pdfUrl": "https://www.aeee.in/wp-content/uploads/2020/08/Sample-pdf.pdf"
+  },
+  {
+    "id": 3,
+    "name": "Sample",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDYksMHSjwgw7I0zpK9DTTaZHEnDq-_apfDA&s",
+    "pdfUrl": "https://www.sjsu.edu/writingcenter/docs/handouts/Research%20Papers%20in%20the%20Sciences.pdf"
+  },
+  {
+    "id": 4,
+    "name": "Catalogue",
+    "imageUrl": "https://img.freepik.com/free-vector/hand-drawn-product-catalog-template_23-2149853541.jpg?semt=ais_hybrid&w=740&q=80",
+    "pdfUrl": "https://www.aeee.in/wp-content/uploads/2020/08/Sample-pdf.pdf"
+  }
+ ,
+  {
+    "id": 5,
+    "name": "Sample",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDYksMHSjwgw7I0zpK9DTTaZHEnDq-_apfDA&s",
+    "pdfUrl": "https://www.sjsu.edu/writingcenter/docs/handouts/Research%20Papers%20in%20the%20Sciences.pdf"
+  },
+  {
+    "id": 6,
+    "name": "Catalogue",
+    "imageUrl": "https://img.freepik.com/free-vector/hand-drawn-product-catalog-template_23-2149853541.jpg?semt=ais_hybrid&w=740&q=80",
+    "pdfUrl": "https://www.aeee.in/wp-content/uploads/2020/08/Sample-pdf.pdf"
+  }
+]

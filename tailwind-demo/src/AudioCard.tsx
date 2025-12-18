@@ -4,13 +4,9 @@ import AudioPlayer from "./AudioPlayer";
 import { useNavigate } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import "swiper/css";
-import "swiper/css/navigation";
-
 import { Navigation } from "swiper/modules";
 
 export default function AudioCard() {
-  const [id, setId] = useState(0);
 
   const navigate = useNavigate();
   return (

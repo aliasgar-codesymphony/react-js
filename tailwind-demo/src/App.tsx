@@ -24,6 +24,9 @@ import { Route, Routes } from "react-router-dom";
 import SwiperDemo from "./SwiperDemo";
 import AudioCard from "./AudioCard";
 import AudioDemo from "./AudioDemo";
+import PdfCard from "./pdfCard";
+import PdfDemo from "./PdfDemo";
+import Header from "./Header";
 
 function App() {
   return (
@@ -75,6 +78,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Website />} />
+        
         <Route path="/watch" element={<SwiperDemo />} />
 
         {/* <Route
@@ -88,14 +92,17 @@ function App() {
           }
         /> */}
         <Route path="/listen" element={<AudioCard />} />
-        <Route
+        <Route path="/audio-demo" element={<AudioDemo />} />
+        {/* <Route
           path="/read"
           element={
             <PdfReader pdfUrl="https://www.aeee.in/wp-content/uploads/2020/08/Sample-pdf.pdf" />
           }
-        />
-        <Route path="/audio" element={<AudioCard />} />
-        <Route path="/audio-demo" element={<AudioDemo />} />
+        /> */}
+        <Route path="/read" element={<PdfCard />} />
+        <Route path="/pdf-demo" element={<PdfDemo />} />
+
+        <Route path="/header" element={<Header />} />
       </Routes>
     </>
   );
