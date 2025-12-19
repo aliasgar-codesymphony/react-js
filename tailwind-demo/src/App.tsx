@@ -24,13 +24,18 @@ import { Route, Routes } from "react-router-dom";
 import SwiperDemo from "./SwiperDemo";
 import AudioCard from "./AudioCard";
 import AudioDemo from "./AudioDemo";
-import PdfCard from "./pdfCard";
+
 import PdfDemo from "./PdfDemo";
 import Header from "./Header";
+import PdfCard from "./PdfCard";
+import ToggleDemo from "./ToggleDemo";
 
 function App() {
   return (
     <>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </head>
       {/* <Font/> */}
       {/* <Flex/> */}
       {/* <Grid /> */}
@@ -78,7 +83,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Website />} />
-        
+
         <Route path="/watch" element={<SwiperDemo />} />
 
         {/* <Route
