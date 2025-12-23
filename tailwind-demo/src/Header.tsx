@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import logo from "./assets/folklog_logo.png";
 import menu from "./assets/hamburger.png";
 import { Dialog } from "@headlessui/react";
+import { useNavigate } from "react-router-dom";
 export default function Header() {
   const [openMenu, setOpenMenu] = useState(false);
-
+  const navigate = useNavigate();
   const toggleButton = () => {
     setOpenMenu(!openMenu);
   };
@@ -16,12 +17,18 @@ export default function Header() {
       </head>
       <div className="z-100 fixed top-0 h-20 xl:h-35  w-screen bg-white  xl:bg-yellow-500  flex items-center justify-between ">
         <div className="xl:ml-40 w-1/2 xl:w-1/3">
-          <img src={logo} className="h-20 w-20 xl:h-35 xl:w-35" />
+          <img
+            src={logo}
+            className="h-20 w-20 xl:h-35 xl:w-35 cursor-pointer"
+            onClick={() => {
+              navigate("/");
+            }}
+          />
         </div>
         <div
           className={`invisible xl:visible w-1/2 xl:w-2/3 xl:mr-40  flex justify-evenly `}
         >
-          <a href="#" className="text-xl font-extrabold">
+          <a href="/" className="text-xl font-extrabold">
             Home
           </a>
           <a href="#" className="text-xl font-extrabold">
@@ -52,18 +59,16 @@ export default function Header() {
         </div>
       </div>
 
-      
-
       <Dialog
         open={openMenu}
         onClose={() => {
           setOpenMenu(false);
         }}
-        className="fixed z-40 xl:hidden flex justify-center w-screen h-screen -mt-20 lg:-mt-40 bg-[#2c3e50]"
+        className=" fixed top-20 left-0 right-0 bottom-0 z-40 xl:hidden flex justify-center w-screen h-screen  lg:-mt-40 bg-[#2c3e50]"
       >
         <div className="flex flex-col gap-12 ">
           <a
-            href="#"
+            href="/"
             className="pt-14 text-center text-xl font-bold text-white"
             onClick={() => {
               setOpenMenu(false);

@@ -43,6 +43,7 @@ export default function Website() {
   const closeModal = () => {
     setVideoModal(false);
   };
+
   return (
     <>
       <head>
@@ -57,19 +58,19 @@ export default function Website() {
 
         {/* Introduction */}
         <div
-          className={`h-135 w-screen bg-[url(./assets/pink_bg.png)] bg-center bg-cover flex flex-wrap items-center justify-center `}
+          className={` h-185 md:h-120 xl:h-135 w-full bg-[url(./assets/pink_bg.png)] bg-center bg-cover flex  items-center justify-center `}
         >
           {/* <div className="w-[100%] h-[100%] flex items-center justify-center ">
           <div className="w-[100%] h-[100%] p-10"> */}
-          <div>
-            <p className="h-15 w-300 text-xl text-white font-medium">
+          <div className="w-[80%]  xl:w-[90%]">
+            <p className=" h-auto  xl:w-[100%] text-lg xl:text-xl text-white font-medium ">
               Step into the enchanting world of FolkLog, where the magic of
               Indian folktales comes alive! Our immersive app invites children
               to explore stories rooted in India's rich heritage, rekindling
               their love for these timeless tales.
             </p>
             <br />
-            <p className="h-15 w-300 text-xl text-white font-medium">
+            <p className=" h-auto  xl:w-[100%] text-lg xl:text-xl text-white font-medium ">
               FolkLog offers an enchanting experience featuring animated films
               inspired by vibrant folk art styles, vivid flipbooks, interactive
               games, captivating puzzles and engaging audio stories perfect for

@@ -21,14 +21,6 @@ media-controller:fullscreen {
   height: 100%;
 }
 
-.sizeControlBig {
-  --media-button-icon-width: 40px;
-  --media-button-icon-height: 40px;
-}
-.sizeControlSmall {
-  --media-button-icon-width: 20px;
-  --media-button-icon-height: 20px;
-}
 
 @media only screen and (min-width: 1280px) {
   media-play-button,
