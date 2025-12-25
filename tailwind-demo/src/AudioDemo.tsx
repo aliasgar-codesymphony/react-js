@@ -7,6 +7,7 @@ import pause from "./assets/pause.png";
 import { formatTime } from "media-chrome/dist/utils/time.js";
 import { useLocation, useParams } from "react-router-dom";
 import audios from "./audios.json";
+import Header from "./Header";
 
 export default function AudioDemo() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -98,17 +99,18 @@ export default function AudioDemo() {
       <audio ref={audioRef}>
         <source src={audioInfo.audioUrl} />
       </audio>
-      <body className="bg-yellow-500">
-        <div className="mt-12 flex flex-col  items-center justify-center gap-3 ">
-          <p className=" text-3xl">{audioInfo.name}</p>
+      <Header />
+      <body className="bg-yellow-500 w-full mb-20">
+        <div className="mt-25 xl:mt-33 flex flex-col items-center justify-center gap-3 ">
+          <p className=" text-2xl xl:text-3xl">{audioInfo.name}</p>
 
           <img
             src={audioInfo.imageUrl}
-            className="w-90 h-110 rounded-3xl border-2 p-2 border-dashed border-red-500"
+            className=" w-65 h-80  md:w-80 md:h-100 xl:w-90 xl:h-110 rounded-3xl border-2 p-2 border-dashed border-red-500"
           />
 
           <Slider
-            className="w-100"
+            className="w-70 md:w-100"
             min={0}
             max={duration}
             marks={marks}
@@ -118,7 +120,7 @@ export default function AudioDemo() {
             value={currentTime}
           />
 
-          <div className="flex justify-center gap-4">
+          <div className="w-full flex justify-center gap-4">
             <button
               className="h-20 w-20 flex justify-center items-center cursor-pointer"
               onClick={minus}

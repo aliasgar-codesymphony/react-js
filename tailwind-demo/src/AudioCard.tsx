@@ -4,7 +4,7 @@ import AudioPlayer from "./AudioPlayer";
 import { useNavigate } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import { Navigation } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
 import Header from "./Header";
 
 export default function AudioCard() {
@@ -19,7 +19,59 @@ export default function AudioCard() {
               spaceBetween={0}
               slidesPerView={4}
               navigation={true}
-              modules={[Navigation]}
+              modules={[Navigation, Pagination]}
+              pagination={{ clickable: true }}
+              breakpoints={{
+                0: {
+                  pagination: {
+                    clickable: true,
+                    enabled: true,
+                  },
+                  navigation: false,
+                  slidesPerView: 1,
+                  spaceBetween: 10,
+                },
+                768: {
+                  navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                    enabled: true,
+                  },
+                  pagination: {
+                    clickable: false,
+                    enabled: false,
+                  },
+                  slidesPerView: 2,
+                  spaceBetween: 10,
+                },
+                1024: {
+                  navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                    enabled: true,
+                  },
+                  pagination: {
+                    clickable: false,
+                    enabled: false,
+                  },
+                  slidesPerView: 3,
+                  spaceBetween: 10,
+                },
+                1440: {
+                  pagination: {
+                    clickable: false,
+                    enabled: false,
+                  },
+                  navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                    enabled: true,
+                  },
+
+                  slidesPerView: 4,
+                  spaceBetween: 10,
+                },
+              }}
             >
               {audios.map((audio: any) => (
                 <SwiperSlide>

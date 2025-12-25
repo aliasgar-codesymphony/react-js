@@ -100,7 +100,7 @@ export default function SwiperDemo() {
                   enabled: false,
                 },
                 slidesPerView: 2,
-                spaceBetween: 20,
+                spaceBetween: 10,
               },
               1024: {
                 navigation: {
@@ -113,7 +113,7 @@ export default function SwiperDemo() {
                   enabled: false,
                 },
                 slidesPerView: 3,
-                spaceBetween: 20,
+                spaceBetween: 10,
               },
               1440: {
                 pagination: {
@@ -127,7 +127,7 @@ export default function SwiperDemo() {
                 },
 
                 slidesPerView: 4,
-                spaceBetween: 20,
+                spaceBetween: 10,
               },
             }}
             
