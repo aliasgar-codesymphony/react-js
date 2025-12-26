@@ -50,7 +50,7 @@ export default function Website() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
       <Header />
-      <body className="overflow-x-hidden ">
+      <body className="overflow-x-hidden  pb-50">
         {/* folklog video */}
         <div className="bg-red-500 w-screen h-auto mt-20 xl:mt-35 cursor-pointer">
           <img src={folk_image} onClick={openModal} />
@@ -179,6 +179,29 @@ export default function Website() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* About us section */}
+
+        <div className="w-full h-200 md:h-100 xl:h-80 bg-[url(./assets/pink_bg.png)] bg-center bg-cover flex justify-center items-center">
+          <div className=" xl:h-[80%] h-[75%] w-[75%] flex flex-col justify-center gap-3">
+            <p className="text-4xl xl:text-5xl font-bold text-white">About us</p>
+            <p className="text-white text-xl ">
+              We are Project FolkLog, an initiative of FolkLogue Studios,
+              committed to preserving the timeless tradition of folk stories and
+              storytelling using modern technology. Since 2015, we have been
+              passionately documenting, archiving, and featuring countless
+              folktales and storytellers from India and beyond on our digital
+              platforms. Our mission is to share the rich cultural heritage of
+              India’s diverse storytelling traditions with a wider audience.
+            </p>
+            <a
+              href="#"
+              className="text-white h-10 w-23 text-center flex justify-center items-center font-medium bg-green-800 "
+            >
+              Read More
+            </a>
           </div>
         </div>
 
