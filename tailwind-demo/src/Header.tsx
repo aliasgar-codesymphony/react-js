@@ -15,7 +15,7 @@ export default function Header() {
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
-      <div className="z-100 fixed top-0 h-20  xl:h-35  w-screen bg-white  xl:bg-yellow-500  flex items-center justify-between ">
+      <div className="z-100  h-20  xl:h-35  w-screen bg-white  xl:bg-yellow-500  flex items-center justify-between ">
         <div className="xl:ml-40 w-1/2 xl:w-1/3">
           <img
             src={logo}

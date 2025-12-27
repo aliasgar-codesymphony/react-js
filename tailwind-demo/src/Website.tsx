@@ -32,6 +32,11 @@ import read2 from "./assets/read2.png";
 
 import pink_bg from "./assets/pink_bg.png";
 
+import logo from "./assets/folklog_logo.png";
+import folkqr from "./assets/folkqr.png";
+import appstore from "./assets/appstore.png";
+import playstore from "./assets/playstore.png";
+
 export default function Website() {
   const navigate = useNavigate();
   const [videoModal, setVideoModal] = useState(false);
@@ -44,15 +49,24 @@ export default function Website() {
     setVideoModal(false);
   };
 
+  console.log("Width: " + window.innerWidth);
+  console.log("Height: " + window.innerHeight);
+
   return (
     <>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
-      <Header />
-      <body className="overflow-x-hidden  pb-50">
+
+      <div id="top">
+        <Header />
+      </div>
+      <body className="overflow-x-hidden ">
         {/* folklog video */}
-        <div className="bg-red-500 w-screen h-auto mt-20 xl:mt-35 cursor-pointer">
+        <div
+          className="bg-red-500 w-screen h-auto mt-20 xl:mt-35 cursor-pointer"
+          
+        >
           <img src={folk_image} onClick={openModal} />
         </div>
 
@@ -186,7 +200,9 @@ export default function Website() {
 
         <div className="w-full h-200 md:h-100 xl:h-80 bg-[url(./assets/pink_bg.png)] bg-center bg-cover flex justify-center items-center">
           <div className=" xl:h-[80%] h-[75%] w-[75%] flex flex-col justify-center gap-3">
-            <p className="text-4xl xl:text-5xl font-bold text-white">About us</p>
+            <p className="text-4xl xl:text-5xl font-bold text-white">
+              About us
+            </p>
             <p className="text-white text-xl ">
               We are Project FolkLog, an initiative of FolkLogue Studios,
               committed to preserving the timeless tradition of folk stories and
@@ -202,6 +218,169 @@ export default function Website() {
             >
               Read More
             </a>
+          </div>
+        </div>
+
+        {/* Our Vision */}
+        {/* h-[90%] w-[80%] */}
+        <div className="bg-yellow-500 xs:h-510 h-475 md:h-315 xl:h-205 w-screen flex justify-center items-center">
+          <div className="bg-[#D04E40] h-[90%] md:h-[85%] xl:h-[80%] xl:w-[85%] rounded-4xl flex items-center ">
+            <div className=" flex flex-col items-center gap-8 xl:gap-4 ">
+              <div className=" h-[75%] w-[70%] xl:h-[75%] xl:w-[90%] flex flex-col  gap-2">
+                <p className="text-2xl  font-bold text-white">Our Vision</p>
+                <p className="text-white text-lg font-medium xl:font-normal">
+                  At the heart of FolkLogue Studios is Vandana Pant, our
+                  founding director, who is deeply captivated by the art of
+                  diverse storytelling traditions in India. Vandana's vision is
+                  to provide children everywhere with access to India's treasure
+                  trove of folk tales, nurturing a love for our cultural
+                  heritage.
+                </p>
+                <a
+                  href="#"
+                  className="text-white h-10 w-23 text-center flex justify-center items-center font-medium bg-green-800 "
+                >
+                  Read More
+                </a>
+              </div>
+              <div className=" h-[75%] w-[70%] xl:h-[75%] xl:w-[90%] flex flex-col  gap-2">
+                <p className="text-2xl  font-bold text-white">
+                  Creating an Immersive Experience:
+                </p>
+                <p className="text-white text-lg font-medium xl:font-normal">
+                  FolkLog App is an extension of our mission, weaving together a
+                  beautiful tapestry of India's socially, culturally, and
+                  historically significant stories. Our team of writers,
+                  artists, animators, storytellers, and producers work
+                  passionately to bring these tales to life through our
+                  immersive app.
+                </p>
+              </div>
+              <div className=" h-[75%] w-[70%] xl:h-[75%] xl:w-[90%] flex flex-col  gap-2">
+                <p className="text-2xl  font-bold text-white">
+                  Our Artistic Masterpieces
+                </p>
+                <p className="text-white text-lg font-medium xl:font-normal ">
+                  Within the FolkLog app, each tale is a masterpiece,
+                  intricately woven into its respective folk art form. The folk
+                  art from Himachal Pradesh leaps to life in the form of Chamba
+                  Rumal, while Madhubani art graces the tales from Bihar. With
+                  meticulous attention to detail, we celebrate the splendor of
+                  India's diverse artistic heritage.
+                </p>
+              </div>
+              <div className=" h-[75%] w-[70%] xl:h-[75%] xl:w-[90%] flex flex-col  gap-2">
+                <p className="text-2xl  font-bold text-white">
+                  Our Team of Dreamweavers
+                </p>
+                <p className="text-white text-lg font-medium xl:font-normal">
+                  Behind every enchanting tale is a team of passionate
+                  dreamweavers. Our writers, artists, and animators blend
+                  tradition with technology, ensuring that every story is a
+                  symphony of art, culture, and innovation.
+                </p>
+                <a
+                  href="#"
+                  className="text-white h-10 w-23 text-center flex justify-center items-center font-medium bg-green-800 "
+                >
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Footer */}
+        {/* space */}
+        <div className="w-full h-7"></div>
+        {/* Footer section */}
+
+        <div className="bg-yellow-500 h-160 w-full rounded-tl-[40px] rounded-tr-[40px]">
+          <div className="h-[92%] flex justify-center items-center gap-64">
+            
+
+            {/* left  */}
+
+            <div className="bg-[#D04E40] h-110 w-100 rounded-2xl relative flex flex-col items-center">
+              <div className="absolute left-[50%] top-[-65px] translate-x-[-50%]">
+                <img src={logo} />
+              </div>
+              <div className="h-13"></div>
+              <div className="w-80">
+                <p className="text-white text-xl text-center">
+                  Scan the code with your camera to download the app
+                </p>
+              </div>
+
+              <img src={folkqr} className="h-50 w-50 mt-5" />
+              <p className="text-white text-lg mt-2">or</p>
+              <div className="flex justify-center gap-4 mt-2">
+                <a href="https://apps.apple.com/in/app/folk-log-bedtime-stories/id6472716599">
+                  <img src={appstore} className="rounded-md " />
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.folklog&hl=en_IN">
+                  <img src={playstore} className="rounded-md" />
+                </a>
+              </div>
+            </div>
+
+            {/* right */}
+
+            <div className=" h-110 w-100 rounded-2xl relative flex flex-col justify-center gap-4">
+              <p>
+                <a href="#" className="text-lg font-bold">
+                  Home
+                </a>
+              </p>
+              <p>
+                <a href="#" className="text-lg font-bold">
+                  Contact Us
+                </a>
+              </p>
+              <p>
+                <a href="#" className="text-lg font-bold">
+                  Privacy policy
+                </a>
+              </p>
+              <p>
+                <a href="#" className="text-lg font-bold">
+                  EULA
+                </a>
+              </p>
+              <p>
+                <a href="#" className="text-lg font-bold">
+                  Terms & Conditions
+                </a>
+              </p>
+              <p>
+                <a href="#" className="text-lg font-bold">
+                  Refund/ Cancellation Policy
+                </a>
+              </p>
+              <p>
+                <a href="#" className="text-lg font-bold">
+                  FAQ
+                </a>
+              </p>
+              <p>
+                <a href="#" className="text-lg font-bold">
+                  Address
+                </a>
+              </p>
+              <p>
+                <a href="#" className="text-lg font-bold">
+                  C-110, Sector-26, NOIDA, UP 201301
+                </a>
+              </p>
+            </div>
+            <a href="#top">top</a>
+          </div>
+
+          {/* copyright */}
+          <div className="flex justify-center">
+            <p className="text-lg font-bold">
+              Copyright 2025 Folklogue Studios. All rights reserved
+            </p>
           </div>
         </div>
 
