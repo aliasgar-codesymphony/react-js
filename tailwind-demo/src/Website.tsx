@@ -36,7 +36,7 @@ import logo from "./assets/folklog_logo.png";
 import folkqr from "./assets/folkqr.png";
 import appstore from "./assets/appstore.png";
 import playstore from "./assets/playstore.png";
-
+import top_arrow from "./assets/top_arrow.png";
 export default function Website() {
   const navigate = useNavigate();
   const [videoModal, setVideoModal] = useState(false);
@@ -63,10 +63,7 @@ export default function Website() {
       </div>
       <body className="overflow-x-hidden ">
         {/* folklog video */}
-        <div
-          className="bg-red-500 w-screen h-auto mt-20 xl:mt-35 cursor-pointer"
-          
-        >
+        <div className="bg-red-500 w-screen h-auto  cursor-pointer">
           <img src={folk_image} onClick={openModal} />
         </div>
 
@@ -295,24 +292,23 @@ export default function Website() {
         <div className="w-full h-7"></div>
         {/* Footer section */}
 
-        <div className="bg-yellow-500 h-160 w-full rounded-tl-[40px] rounded-tr-[40px]">
-          <div className="h-[92%] flex justify-center items-center gap-64">
-            
-
+        <div className="bg-yellow-500 h-255 xl:h-160 w-full rounded-tl-[40px] rounded-tr-[40px] ">
+          <div className="relative top-30 xl:top-6 xl:left-15 md:h-[85%]  h-[92%] md:w-[80%] w-[100%] flex justify-evenly items-center  flex-wrap md:flex-wrap ">
+            {" "}
+            {/* gap-64 */}
             {/* left  */}
-
-            <div className="bg-[#D04E40] h-110 w-100 rounded-2xl relative flex flex-col items-center">
+            <div className="bg-[#D04E40]  h-100 w-70 md:w-90  xl:h-110 xl:w-100 rounded-2xl relative flex flex-col items-center">
               <div className="absolute left-[50%] top-[-65px] translate-x-[-50%]">
                 <img src={logo} />
               </div>
               <div className="h-13"></div>
               <div className="w-80">
-                <p className="text-white text-xl text-center">
+                <p className="text-white text-lg xl:text-xl text-center">
                   Scan the code with your camera to download the app
                 </p>
               </div>
 
-              <img src={folkqr} className="h-50 w-50 mt-5" />
+              <img src={folkqr} className="h-40 h-40  xl:h-50 xl:w-50 mt-5" />
               <p className="text-white text-lg mt-2">or</p>
               <div className="flex justify-center gap-4 mt-2">
                 <a href="https://apps.apple.com/in/app/folk-log-bedtime-stories/id6472716599">
@@ -323,62 +319,64 @@ export default function Website() {
                 </a>
               </div>
             </div>
-
             {/* right */}
-
-            <div className=" h-110 w-100 rounded-2xl relative flex flex-col justify-center gap-4">
+            <div className="relative left-20 h-110 w-100 rounded-2xl relative flex flex-col justify-center gap-4">
               <p>
-                <a href="#" className="text-lg font-bold">
+                <a href="#" className="text-base xl:text-lg font-bold">
                   Home
                 </a>
               </p>
               <p>
-                <a href="#" className="text-lg font-bold">
+                <a href="#" className="text-base xl:text-lg font-bold">
                   Contact Us
                 </a>
               </p>
               <p>
-                <a href="#" className="text-lg font-bold">
+                <a href="#" className="text-base xl:text-lg font-bold">
                   Privacy policy
                 </a>
               </p>
               <p>
-                <a href="#" className="text-lg font-bold">
+                <a href="#" className="text-base xl:text-lg font-bold">
                   EULA
                 </a>
               </p>
               <p>
-                <a href="#" className="text-lg font-bold">
+                <a href="#" className="text-base xl:text-lg font-bold">
                   Terms & Conditions
                 </a>
               </p>
               <p>
-                <a href="#" className="text-lg font-bold">
+                <a href="#" className="text-base xl:text-lg font-bold">
                   Refund/ Cancellation Policy
                 </a>
               </p>
               <p>
-                <a href="#" className="text-lg font-bold">
+                <a href="#" className="text-base xl:text-lg font-bold">
                   FAQ
                 </a>
               </p>
               <p>
-                <a href="#" className="text-lg font-bold">
+                <a href="#" className="text-base xl:text-lg font-bold">
                   Address
                 </a>
               </p>
               <p>
-                <a href="#" className="text-lg font-bold">
+                <a href="#" className="text-base xl:text-lg font-bold">
                   C-110, Sector-26, NOIDA, UP 201301
                 </a>
               </p>
             </div>
-            <a href="#top">top</a>
+            <div className="relative -top-40 ">
+              <a href="#top">
+                <img src={top_arrow} />
+              </a>
+            </div>
           </div>
 
           {/* copyright */}
-          <div className="flex justify-center">
-            <p className="text-lg font-bold">
+          <div className="flex justify-center relative top-15 xl:static">
+            <p className="text-sm xl:text-lg font-bold">
               Copyright 2025 Folklogue Studios. All rights reserved
             </p>
           </div>
